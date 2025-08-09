@@ -3,6 +3,8 @@ const button = document.querySelector("#nav-button");
 button.addEventListener("click", () => {
     const dropdownContent = document.querySelector("#dropdown-nav");
     dropdownContent.classList.toggle("active");
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
 });
 
 window.addEventListener("resize", () => {
